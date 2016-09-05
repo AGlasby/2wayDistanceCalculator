@@ -403,6 +403,9 @@
                                                         <include reference="MnI-xn-Io6"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="getDistancesPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGU-X8-55i"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -578,6 +581,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="destination1TxtFld" destination="9V2-6c-aCG" id="Bi6-zf-xGr"/>
+                        <outlet property="destination2TxtFld" destination="F9y-im-31G" id="6Cv-c9-6MR"/>
+                        <outlet property="destination3TxtFld" destination="JgP-Ug-Ok2" id="BZ2-gs-rip"/>
+                        <outlet property="distance1Lbl" destination="j9G-t6-jfq" id="mDr-Gu-UUu"/>
+                        <outlet property="distance2LBL" destination="99w-NF-WrV" id="kJv-7i-Kfv"/>
+                        <outlet property="distance3Lbl" destination="m8y-28-4qY" id="2b9-Av-gLX"/>
+                        <outlet property="startPointTxtFld" destination="ipU-Zf-FVC" id="pzb-Zd-kdT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
