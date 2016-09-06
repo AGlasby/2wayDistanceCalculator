@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DistanceGetter/DGDistanceRequest.h"
 
 @interface ViewController ()
+
+@property (nonatomic) DGDistanceRequest *req;
+
 @property (weak, nonatomic) IBOutlet UITextField *startPointTxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *destination1TxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *destination2TxtFld;
@@ -31,8 +35,39 @@
 }
 
 - (IBAction)getDistancesPushed:(id)sender {
-    self.distance3Lbl.text = @"  150 miles";
 
+    self.getDistanceBtn.enabled = NO;
+
+    self.req = [DGDistanceRequest alloc];
+    NSString *start = self.startPointTxtFld.text;
+    NSString *end1 = self.destination1TxtFld.text;
+    NSString *end2 = self.destination2TxtFld.text;
+    NSString *end3 = self.destination3TxtFld.text;
+
+    NSArray *destinations = @[end1, end2, end3];
+
+    self.req = [self.req initWithLocationDescriptions:destinations sourceDescription:start];
+
+    __weak ViewController *weakSelf = self;
+
+    self.req.callback = ^void(NSArray *responses) {
+        ViewController *strongSelf = weakSelf;
+        if(!strongSelf) return;
+
+        NSNull *badResult = [NSNull null];
+        double dist = ([responses[0] floatValue] / 1000.0);
+        if(responses[0] != badResult) {
+            NSString *distance = [NSString stringWithFormat:@"  %.2f km", (dist)];
+            strongSelf.distance1Lbl.text = distance;
+        } else {
+            strongSelf.distance1Lbl.text = @"  Error";
+        }
+
+    strongSelf.getDistanceBtn.enabled = YES;
+    strongSelf.req = nil;
+    };
+
+    [self.req start];
 }
 
 -(void)configureTxtFlds {
