@@ -17,9 +17,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *destination1TxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *destination2TxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *destination3TxtFld;
+@property (weak, nonatomic) IBOutlet UITextField *destination4TxtFld;
 @property (weak, nonatomic) IBOutlet UILabel *distance1Lbl;
 @property (weak, nonatomic) IBOutlet UILabel *distance2LBL;
 @property (weak, nonatomic) IBOutlet UILabel *distance3Lbl;
+@property (weak, nonatomic) IBOutlet UILabel *distance4Lbl;
 @property (weak, nonatomic) IBOutlet UIButton *getDistanceBtn;
 
 @end
@@ -33,6 +35,9 @@
     [self configureLbls];
     [self configureBtn];
 }
+- (IBAction)distanceUnitsSegmentedControl:(id)sender {
+    
+}
 
 - (IBAction)getDistancesPushed:(id)sender {
 
@@ -43,8 +48,9 @@
     NSString *end1 = self.destination1TxtFld.text;
     NSString *end2 = self.destination2TxtFld.text;
     NSString *end3 = self.destination3TxtFld.text;
+    NSString *end4 = self.destination4TxtFld.text;
 
-    NSArray *destinations = @[end1, end2, end3];
+    NSArray *destinations = @[end1, end2, end3, end4];
 
     self.req = [self.req initWithLocationDescriptions:destinations sourceDescription:start];
 
@@ -76,6 +82,7 @@
     [txtFlds addObject:self.destination1TxtFld];
     [txtFlds addObject:self.destination2TxtFld];
     [txtFlds addObject:self.destination3TxtFld];
+    [txtFlds addObject:self.destination4TxtFld];
 
 
     for (int i = 0; (i < [txtFlds count]); i++) {
@@ -97,6 +104,7 @@
     [lbls addObject:self.distance1Lbl];
     [lbls addObject:self.distance2LBL];
     [lbls addObject:self.distance3Lbl];
+    [lbls addObject:self.distance4Lbl];
 
     for (int i = 0; (i < [lbls count]); i++) {
 
