@@ -35,11 +35,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.destination3TxtFld.delegate = self;
+    self.destination4TxtFld.delegate = self;
+
     [self configureTxtFlds];
     [self configureLbls];
     [self configureBtn];
     self.divisor = 1.00;
     self.distanceUnits = @"m";
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if(textField == self.destination3TxtFld || self.destination3TxtFld) {
+        [textField resignFirstResponder];
+    }
+    return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    //hides keyboard when another part of layout was touched
+    [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (IBAction)distanceUnitsSegmentedControl:(id)sender {
