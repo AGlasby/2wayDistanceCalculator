@@ -1,2 +1,10 @@
 
 *.xcbkptlist
+
+clear.png
+
+DistanceCalculator/Assets.xcassets/clear_large.imageset/clear.png
+
+clear_medium.png
+
+clear_small.png
