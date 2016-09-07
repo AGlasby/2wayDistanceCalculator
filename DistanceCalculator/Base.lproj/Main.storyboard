@@ -38,7 +38,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="0.87058189655172413" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="Gr2-f7-D1f"/>
@@ -114,7 +114,7 @@
                                                         </constraints>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="A4g-fG-fpu"/>
@@ -136,7 +136,7 @@
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-t6-jfq">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-t6-jfq">
                                                         <rect key="frame" x="155" y="0.0" width="9" height="19"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="0Yh-xp-Hda">
@@ -210,7 +210,7 @@
                                                         </constraints>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="8jz-bw-oc0"/>
@@ -232,7 +232,7 @@
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99w-NF-WrV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="99w-NF-WrV">
                                                         <rect key="frame" x="155" y="0.0" width="9" height="19"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="CSm-E8-V45">
@@ -310,7 +310,7 @@
                                                         </constraints>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="09Z-Jk-o9K"/>
@@ -332,7 +332,7 @@
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-28-4qY">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-28-4qY">
                                                         <rect key="frame" x="155" y="0.0" width="9" height="19"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="32" id="IlH-gQ-3hU">
@@ -403,7 +403,7 @@
                                                         </constraints>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="0Ax-mA-3uk"/>
@@ -425,7 +425,7 @@
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-EV-L4z" userLabel="Distance 4 Lbl">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-EV-L4z" userLabel="Distance 4 Lbl">
                                                         <rect key="frame" x="155" y="0.0" width="9" height="19"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="12k-0E-c3c"/>
@@ -572,7 +572,6 @@
                                     <mask key="constraints">
                                         <exclude reference="4HY-ED-D3l"/>
                                         <exclude reference="B0p-zz-Rch"/>
-                                        <exclude reference="TeV-gy-cfW"/>
                                         <exclude reference="UMa-78-76w"/>
                                         <exclude reference="YR8-Mw-Ksh"/>
                                         <exclude reference="bdo-22-pTS"/>
@@ -591,6 +590,7 @@
                                         <exclude reference="7Zb-Ch-AaK"/>
                                         <exclude reference="N2o-ah-cFD"/>
                                         <exclude reference="Nfc-Ml-Cii"/>
+                                        <exclude reference="TeV-gy-cfW"/>
                                         <exclude reference="Tuh-LT-Ct1"/>
                                         <exclude reference="dYN-1s-XWN"/>
                                         <exclude reference="jGT-wW-pki"/>
@@ -632,11 +632,11 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="4HY-ED-D3l"/>
-                                        <exclude reference="TeV-gy-cfW"/>
                                         <include reference="wGv-dF-NPw"/>
                                         <include reference="1i8-5N-hJV"/>
                                         <include reference="EjF-q1-8Hn"/>
                                         <include reference="N2o-ah-cFD"/>
+                                        <exclude reference="TeV-gy-cfW"/>
                                         <include reference="dYN-1s-XWN"/>
                                         <include reference="34c-1x-JDj"/>
                                         <include reference="e9p-TN-AbA"/>
